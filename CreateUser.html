@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" type="text/css" href="style/styling.css">
+        <script src="scripts/validator.js"></script>
+    </head>
+
+    <body>
+
+        <div class="bodyContent">
+
+            <header>
+                <img src="images/bug.png" alt="bug" class="bugimg">
+                <h4>BugMe Issue Tracker</h4>
+            </header>
+
+            <div class="side-bar">
+
+                <a href="HomePage.html">
+                    <div class="home">
+                        <p><img src="images/home.png" alt="home" id="sideimg">Home</img></p>
+                    </div>
+                </a>
+
+                <a href="CreateUser.html">
+                    <div class="create">
+                        <p><img src="images/user.png" alt="createUser" id="sideimg">Add User</img></p>
+                    </div>
+                </a>
+
+                <a href="CreateIssue.html">
+                    <div class="issue">
+                        <p><img src="images/issue.png" alt="createIssue" id="sideimg">New Issue</img></p>
+                    </div>
+                </a>
+
+                <a href="Logout.html">
+                    <div class="logout">
+                        <p><img src="images/logout.png" alt="logout" id="sideimg">Logout</img></p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="main">
+                <div>
+                    <h1>New User</h1>
+                    <br><br>
+
+                    <form method="POST" action="scripts/userDB.php">
+                        <label for="firstname">First Name</label><br>
+                        <input type="text" name="firstname" id="firstname" class="input" required>
+                        <br><br>
+
+                        <label for="lastname">Last Name</label><br>
+                        <input type="text" name="lastname" id="lastname" class="input" required>
+                        <br><br>
+
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password" class="input" required>
+                        <br><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" class="input" required>
+                        <br><br>
+                        <input type="hidden" name="createUser" value = "FLPE@">
+
+                        <button type="button" name="submit" id="submit" class="submit" onclick="validateForm()">Submit</button>
+                        <br>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>

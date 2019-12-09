@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+	grid-column: 1 / span 4;
+	padding-left: 35px;
+	color: white;
+    background-color: black;
+}
+
+header h4 {
+    padding-left: 50px;
+}
+
+.side-bar {
+    justify-content: center;
+    align-items: center;
+	background-color: #e3e2e1;
+    min-width: 195px;
+    float: left;
+    min-height: 88vh;
+    padding-top: 20px
+}
+
+.side-bar p {
+    margin: 0px;
+}
+
+#sideimg {
+    width: 15px;
+    padding-right: 7px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.home, .create, .issue, .logout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 20%;
+	width: 80%;
+}
+
+.home:hover, .create:hover, .issue:hover, .logout:hover {
+    animation-name: transition;
+	animation-duration: .5s;
+	background-color: skyblue;
+}
+
+.bugimg {
+    display: inline;
+    position: absolute;
+    width: 30px;
+}
+
+.main {
+    height: inherit;
+	width: inherit;
+	background-color: white;
+    padding-left: 20px;
+    overflow: hidden;
+    min-height: 75vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4fa165;
+    height: 30px;
+    width: 160px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttons {
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttons:hover {
+    border: none;
+    background-color: #106bc9;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 4px;
+}
+
+.input {
+    border: solid;
+    padding: 5px;
+    border-width: 1.5px;
+    border-radius: 4px;
+    min-width: 300px;
+    
+}
+
+.submit {
+    border: none;
+    border-radius: 4px;
+    background-color: #2db6e3;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    min-width: 120px;
+}
+
+option, select {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" type="text/css" href="style/styling.css">
+    </head>
+
+    <body>
+
+        <div class="bodyContent">
+
+            <header>
+                <img src="images/bug.png" alt="bug" class="bugimg">
+                <h4>BugMe Issue Tracker</h4>
+            </header>
+
+            <div class="side-bar">
+
+                <a href="HomePage.html">
+                    <div class="home">
+                        <p><img src="images/home.png" alt="home" id="sideimg">Home</img></p>
+                    </div>
+                </a>
+
+                <a href="CreateUser.html">
+                    <div class="create">
+                        <p><img src="images/user.png" alt="createUser" id="sideimg">Add User</img></p>
+                    </div>
+                </a>
+
+                <a href="CreateIssue.html">
+                    <div class="issue">
+                        <p><img src="images/issue.png" alt="createIssue" id="sideimg">New Issue</img></p>
+                    </div>
+                </a>
+
+                <a href="Logout.html">
+                    <div class="logout">
+                        <p><img src="images/logout.png" alt="logout" id="sideimg">Logout</img></p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="main">
+                <div>
+                    <h1>Create Issue</h1>
+                    <br>
+
+                    <form method="GET" action="info2180.php">
+                        <p>Title</p>
+                        <input type="text" name="title" id="title" class="input" required>
+                        <br>
+
+                        <p>Description</p>
+                        <input type="textarea" name="description" id="description" class="input" required>
+                        <br>
+
+                        <p>Assigned To</p>
+                        <select id="users" name="users" class="input">
+
+                        </select>
+                        <br>
+
+                        <p>Type</p>
+                        <select id="type" name="type" class="input">
+                            <option>Bug</option>
+                            <option>Proposal</option>
+                            <option>Task</option>
+                        </select>
+                        <br>
+
+                        <p>Priority</p>
+                        <select id="priority" name="priority" class="input">
+                            <option>Minor</option>
+                            <option>Major</option>
+                            <option>Critical</option>
+                        </select>
+                        <br><br>
+
+                        <button type="button" name="submit" id="submit" class="submit">Submit</button>
+                        <br>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
